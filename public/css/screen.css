@@ -137,6 +137,15 @@ div#content p {
   line-height: 1.5em;
   margin: 1em 0;
 }
+div#content p img {
+  float: left;
+  margin: 0 20px 5px 0;
+  -webkit-transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
+  border: 4px solid white;
+  -moz-box-shadow: 0 0 3px black;
+  -webkit-box-shadow: 0 0 3px black;
+}
 div#content em { font-style: normal; }
 div#content article h1 {
   border-color: #d7d4c7;

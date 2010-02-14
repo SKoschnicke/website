@@ -1,7 +1,7 @@
 <%# this is the article index, which needs to be named "index.rhtml", or else there will be no article and archives variables %>
 <section id="articles">
   <% for article in articles[0...3] %>
-    <article class="post">
+    <article class="post short">
       <header>
         <h1><a href="<%= article.path %>"><%= article.title %></a></h1>
         <span class="date"><%= article.date %></span>

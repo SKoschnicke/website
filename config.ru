@@ -9,6 +9,12 @@ if ENV['RACK_ENV'] == 'development'
   use Rack::ShowExceptions
 end
 
+if ENV['RACK_ENV'] == 'production'
+  use Rack::Auth::Basic, "GFXpro Relaunch private beta" do |username, password|
+    'newsite' == password
+  end
+end
+
 #
 # Create and configure a toto instance
 #

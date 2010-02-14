@@ -1,3 +1,15 @@
+@font-face {
+  font-family: Honey;
+  src: url( /fonts/HONEY.TTF );
+}
+@font-face {
+  font-family: Baskerville;
+  src: url( /fonts/Baskerville.ttc );
+}
+@font-face {
+  font-family: Georgia;
+  src: url( /fonts/Georgia.ttf );
+}
 html, body {
   height: 100%;
   padding: 0;
@@ -50,7 +62,7 @@ ul#navigation {
   width: 275px;
   clear: left;
   float: left;
-  margin: 96px 0 0 68px;
+  margin: 101px 0 0 68px;
   padding: 0;
   list-style: none none inside;
 }
@@ -65,8 +77,8 @@ ul#navigation li:last-child a {
 }
 ul#navigation li a {
   display: block;
-  background-color: #a0a0a0;
-  color: black;
+  background-color: rgba(160, 160, 160, 0.5);
+  color: #303030;
   width: 245px;
   padding: 10px 15px 9px 15px;
   z-index: 9;
@@ -74,82 +86,61 @@ ul#navigation li a {
   text-decoration: none;
   border-bottom: 1px solid #444444;
 }
+ul#navigation li a:hover { background-color: #a0a0a0; }
 ul#navigation li.active a {
   background-color: #e0e0e0;
-  color: black;
+  color: #303030;
   -moz-box-shadow: 0 0 0 black;
   -webkit-box-shadow: 0 0 0 black;
 }
 div#content {
   background-color: #fbf4da;
-  font-family: Baskerville, Georgia, "Times New Roman", serif;
+  font-family: Baskerville, Palatino Linotype, Book Antiqua, Palatino, serif;
   color: #494339;
   width: 485px;
   margin: 0 0 0 343px;
-  padding: 78px 66px 0 66px;
+  padding: 78px 66px 2em 66px;
   -moz-border-radius: 0 10px 10px 0;
   -webkit-border-top-right-radius: 10px;
   -webkit-border-bottom-right-radius: 10px;
   -moz-box-shadow: 0 0 10px black;
   -webkit-box-shadow: 0 0 10px black;
   z-index: 10;
-  -webkit-animation-name: rot;
-  -webkit-animation-duration: 4s;
-  -webkit-animation-iteration-count: 100;
-  -webkit-animation-direction: alternate;
 }
-div#intro {
-  width: 100%;
-  margin: 0;
-  line-height: 1.8em;
-}
-div#intro h1 {
+div#content h1 {
   font-size: 2em;
-  line-height: 64px;
   font-weight: normal;
   padding: 0 0 0 66px;
   margin: 0 0 0 -66px;
   font-family: Georgia;
+  color: #8b0000;
+}
+div#content h1 a {
+  display: block;
+  color: inherit;
+  text-decoration: inherit;
+  width: 100%;
+}
+div#content h1.start {
+  line-height: 64px;
   background-color: #8b0000;
   color: white;
   background-image: url(/images/bookmark.png);
   background-repeat: no-repeat;
   background-position: right center;
 }
-div#intro p {
-  margin: 43px 0;
+div#content p#intro {
   font-size: 1.3em;
+  margin: 2.5em 0;
+}
+div#content p {
   line-height: 1.5em;
+  margin: 1em 0;
 }
-div#intro em { font-style: normal; }
-a#client_project {
-  display: block;
-  height: 240px;
-  margin: 0 39px;
-  padding: 40px;
-  text-align: center;
-  text-decoration: none;
-  font-style: italic;
-  color: gray;
-  background-image: url(/images/box.png);
-  background-repeat: no-repeat;
-  background-position: center;
+div#content em { font-style: normal; }
+div#content article h1 {
+  border-color: #d7d4c7;
+  border-style: solid;
+  border-width: 1px 0;
 }
-a#client_project img {
-  border: none;
-  margin: 0;
-}
-a#client_project p { margin: 0; }
-a#references {
-  display: block;
-  margin: 30px 69px 0;
-  padding: 100px 0 0 0;
-  text-align: center;
-  text-decoration: none;
-  font-style: italic;
-  color: gray;
-  background-image: url(/images/eiderkurbad.png);
-  background-repeat: no-repeat;
-  -moz-box-shadow: 0 0 10px black;
-  -webkit-box-shadow: 0 0 10px black;
-}
+div#content article .date { font-size: 0.7em; }

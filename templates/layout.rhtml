@@ -17,21 +17,24 @@
     <link rel="stylesheet" type="text/css" href="/css/screen.css" />
   </head>
   <body>
-    <img id="background" src="images/background.jpg" alt="background with stones" />
+    <img id="background" src="/images/background.jpg" alt="wooden background" />
     <div id="main">
       <div id="sidebar">
         <a href="/">
-          <img id="logo" width="300" height="196" src="images/gfxpro-logo.png" />
+          <img id="logo" width="300" height="196" src="/images/gfxpro-logo.png" />
         </a>
         <ul id="navigation" class="ui-accordion active">
 <%
   def nav_link(name, title)
-    "<li #{name == @path ? "class=\"active\"" : ""}><a href=\"#{name}\">#{title}</a></li>"
+    "<li #{name == @path ? "class=\"active\"" : ""}><a href=\"/#{name}\">#{title}</a></li>"
   end
 %>
-          <%= nav_link("start", "Start") %>
+          <%= nav_link("start", "Willkommen") %>
+          <%= nav_link("competence", "Kompetenz") %>
+          <%= nav_link("development", "Entwicklung") %>
+          <%= nav_link("design", "Design") %>
           <%= nav_link("index", "Blog") %>
-          <%= nav_link("archives", "Archiv") %>
+          <%= nav_link("contact", "Kontakt") %>
         </ul>
         <div class="clearer"></div>
         <div id="content">

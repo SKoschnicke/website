@@ -15,13 +15,24 @@
 
     @background-color: #FBF4DA;
     @text-color: #494339;
+    @headings_color: #8B0000;
 
-    /*
       @font-face {
         font-family: Honey ;
-        src: url( /fonts/HONEY.TTF ) format("truetype");
+        src: url( /fonts/HONEY.TTF );// format("truetype");
       }
 
+      @font-face {
+        font-family: Baskerville ;
+        src: url( /fonts/Baskerville.ttc );// format("truetype");
+      }
+
+      @font-face {
+        font-family: Georgia;
+        src: url( /fonts/Georgia.ttf );// format("truetype");
+      }
+
+    /*
       @font-face {
         font-family: "PhontPhreaks Handwriting";
         src: url("/fonts/PhontPhreaks_Handwriting.ttf") format("truetype");
@@ -76,7 +87,7 @@
         -webkit-border-top-left-radius: 10px;
         -webkit-border-bottom-left-radius: 10px;
         -moz-border-radius: 10px 0 0 10px;
-        font-family: Helvetica,Verdana,sans-serif;
+        font-family: Helvetica, Verdana, sans-serif;
       }
 
       div.clearer {
@@ -95,7 +106,7 @@
         width: 275px; /* 343 - 68 = 275 */
         clear: left;
         float: left;
-        margin: 96px 0 0 68px;
+        margin: 101px 0 0 68px;
         padding: 0;
         list-style: none none inside;
       }
@@ -114,8 +125,8 @@
 
         li a {
           display: block;
-          background-color: #A0A0A0;
-          color: black;
+          background-color: rgba(160,160,160,0.5);
+          color: #303030;
           width: 245px; /* 343 = 2 * 15 + 68 + 245 */
           padding: 10px 15px 9px 15px;
           z-index: 9;
@@ -124,38 +135,25 @@
           border-bottom: 1px solid #444;
         }
 
+        li a:hover {
+          background-color: rgba(160,160,160,1);
+        }
+
         li.active a {
           background-color: #E0E0E0;
-          color: black;
+          color: #303030;
           -moz-box-shadow: 0 0 0 black;
           -webkit-box-shadow: 0 0 0 black;
         }
       }
 
-
-      /*
-      @-webkit-keyframes rot {
-       from {
-         -webkit-transform-origin: left center;
-       }
-       to {
-         -webkit-transform-origin: left center;
-         -webkit-transform: rotateY(-90deg);
-       }
-      }
-      */
-
       div#content {
         background-color: @background-color;
-        /*
-        background-image: url(/images/background-paper.jpg);
-        background-repeat: repeat;
-        */
-        font-family: Baskerville,Georgia,"Times New Roman",serif;
+        font-family: Baskerville, Palatino Linotype, Book Antiqua, Palatino, serif;
         color: @text-color;
         width: 485px; /* 617 = 2 * 66 + 485 */
         margin: 0 0 0 343px;
-        padding: 78px 66px 0 66px;
+        padding: 78px 66px 2em 66px;
         -moz-border-radius: 0 10px 10px 0;
         -webkit-border-top-right-radius: 10px;
         -webkit-border-bottom-right-radius: 10px;
@@ -163,85 +161,55 @@
         -webkit-box-shadow: 0 0 10px black;
         z-index: 10;
 
-        -webkit-animation-name: rot;
-        -webkit-animation-duration: 4s;
-        -webkit-animation-iteration-count: 100;
-        -webkit-animation-direction: alternate;
-      }
+        h1 {
+          font-size: 2em;
+          font-weight: normal;
+          padding: 0 0 0 66px;
+          margin: 0 0 0 -66px;
+          font-family: Georgia;
+          color: @headings_color;
+        }
 
-      div#intro {
-        width: 100%;
-        margin: 0;
-        line-height: 1.8em;
-      }
+        h1 a {
+          display: block;
+          color: inherit;
+          text-decoration: inherit;
+          width: 100%;
+        }
 
-      div#intro h1 {
-        font-size: 2em;
-        line-height: 64px;
-        font-weight: normal;
-        padding: 0 0 0 66px;
-        margin: 0 0 0 -66px;
-        font-family: Georgia;
-        background-color: #8B0000;
-        color: white;
-        background-image: url(/images/bookmark.png);
-        background-repeat: no-repeat;
-        background-position: right center;
-      }
+        h1.start {
+          line-height: 64px;
+          background-color: @headings_color;
+          color: white;
+          background-image: url(/images/bookmark.png);
+          background-repeat: no-repeat;
+          background-position: right center;
+        }
 
-      div#intro p {
-        margin: 43px 0;
-        font-size: 1.3em;
-        line-height: 1.5em;
-        /*
-        font-family: "PhontPhreaks Handwriting";
-        */
-      }
+        p#intro {
+          font-size: 1.3em;
+          margin: 2.5em 0;
+        }
 
-      div#intro em {
-        font-style: normal;
-        /*
-        background-image: url(/images/underline.png);
-        background-repeat: repeat-x;
-        background-position: 100% 100%;
-        padding-bottom: 3px;
-        */
-      }
+        p {
+          line-height: 1.5em;
+          margin: 1em 0;
+        }
 
-      a#client_project {
-        display: block;
-        height: 240px;
-        /*margin: 0 69px;*/
-        margin: 0 39px;
-        padding: 40px;
-        text-align: center;
-        text-decoration: none;
-        font-style: italic;
-        color: gray;
-        background-image: url(/images/box.png);
-        background-repeat: no-repeat;
-        background-position: center;
-      }
+        em {
+          font-style: normal;
+        }
 
-      a#client_project img {
-        border: none;
-        margin: 0;
-      }
+        article {
 
-      a#client_project p {
-        margin: 0;
-      }
+          h1 {
+            border-color: #D7D4C7;
+            border-style: solid;
+            border-width: 1px 0;
+          }
 
-      a#references {
-        display: block;
-        margin: 30px 69px 0;
-        padding: 100px 0 0 0;
-        text-align: center;
-        text-decoration: none;
-        font-style: italic;
-        color: gray;
-        background-image: url(/images/eiderkurbad.png);
-        background-repeat: no-repeat;
-        -moz-box-shadow: 0 0 10px black;
-        -webkit-box-shadow: 0 0 10px black;
+          .date {
+            font-size: 0.7em;
+          }
+        }
       }

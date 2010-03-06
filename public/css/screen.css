@@ -125,7 +125,7 @@ div#content h1.start {
   line-height: 64px;
   background-color: #8b0000;
   color: white;
-  background-image: url(/images/bookmark.png);
+  background-image: url(/images/bookmark.png), -moz-linear-gradient(left top, #8b0000, #be0000);
   background-repeat: no-repeat;
   background-position: right center;
 }

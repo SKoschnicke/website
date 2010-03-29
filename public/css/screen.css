@@ -36,21 +36,22 @@ div#main {
   width: 960px;
   margin: 30px auto 30px;
   padding: 0;
-  -webkit-perspective: 2200;
-  -webkit-perspective-origin-x: 343px;
-  -webkit-perspective-origin-y: 50%;
-}
-div#sidebar {
-  width: 343px;
-  background-color: transparent;
-  background-image: url(/images/black50.png);
+  background-color: rgba(0, 0, 0, 0.4);
   background-repeat: repeat;
   -webkit-border-top-left-radius: 10px;
   -webkit-border-bottom-left-radius: 10px;
   -moz-border-radius: 10px 0 0 10px;
+  -webkit-perspective: 2200;
+  -webkit-perspective-origin-x: 343px;
+  -webkit-perspective-origin-y: 50%;
+}
+div#main div#sidebar {
+  float: left;
+  width: 343px;
+  min-height: 500px;
   font-family: Helvetica, Verdana, sans-serif;
 }
-img#logo {
+div#main div#sidebar img#logo {
   float: left;
   width: 150px;
   height: 98px;
@@ -58,24 +59,24 @@ img#logo {
   margin-left: 100px;
   border: 0;
 }
-ul#navigation {
+div#main div#sidebar ul#navigation {
   width: 275px;
   clear: left;
   float: left;
-  margin: 101px 0 0 68px;
+  margin: 101px 0 30px 68px;
   padding: 0;
   list-style: none none inside;
 }
-ul#navigation li:first-child a {
+div#main div#sidebar ul#navigation li:first-child a {
   -moz-border-radius: 10px 0 0 0;
   -webkit-border-top-left-radius: 10px;
 }
-ul#navigation li:last-child a {
+div#main div#sidebar ul#navigation li:last-child a {
   -moz-border-radius: 0 0 0 10px;
   -webkit-border-bottom-left-radius: 10px;
   border-bottom: none;
 }
-ul#navigation li a {
+div#main div#sidebar ul#navigation li a {
   display: block;
   background-color: rgba(160, 160, 160, 0.5);
   color: #303030;
@@ -86,14 +87,14 @@ ul#navigation li a {
   text-decoration: none;
   border-bottom: 1px solid #444444;
 }
-ul#navigation li a:hover { background-color: #a0a0a0; }
-ul#navigation li.active a {
+div#main div#sidebar ul#navigation li a:hover { background-color: #a0a0a0; }
+div#main div#sidebar ul#navigation li.active a {
   background-color: #e0e0e0;
   color: #303030;
   -moz-box-shadow: 0 0 0 black;
   -webkit-box-shadow: 0 0 0 black;
 }
-div#content {
+div#main div#content {
   background-color: #fbf4da;
   font-family: Baskerville, Palatino Linotype, Book Antiqua, Palatino, serif;
   color: #494339;
@@ -108,7 +109,7 @@ div#content {
   z-index: 10;
   min-height: 500px;
 }
-div#content h1 {
+div#main div#content h1 {
   font-size: 2em;
   font-weight: normal;
   padding: 0 0 0 66px;
@@ -116,13 +117,13 @@ div#content h1 {
   font-family: Georgia;
   color: #8b0000;
 }
-div#content h1 a {
+div#main div#content h1 a {
   display: block;
   color: inherit;
   text-decoration: inherit;
   width: 100%;
 }
-div#content h1.start {
+div#main div#content h1.start {
   line-height: 64px;
   background-color: #8b0000;
   color: white;
@@ -130,15 +131,15 @@ div#content h1.start {
   background-repeat: no-repeat;
   background-position: right center;
 }
-div#content p#intro {
+div#main div#content p#intro {
   font-size: 1.3em;
   margin: 2.5em 0;
 }
-div#content p {
+div#main div#content p {
   line-height: 1.5em;
   margin: 1em 0;
 }
-div#content p img {
+div#main div#content p img {
   float: left;
   margin: 0 20px 5px 0;
   -webkit-transform: rotate(-2deg);
@@ -147,14 +148,14 @@ div#content p img {
   -moz-box-shadow: 0 0 3px black;
   -webkit-box-shadow: 0 0 3px black;
 }
-div#content em { font-style: normal; }
-div#content article {
+div#main div#content em { font-style: normal; }
+div#main div#content article {
   margin-bottom: 1.5em;
   display: block;
 }
-div#content article h1 {
+div#main div#content article h1 {
   border-color: #d7d4c7;
   border-style: solid;
   border-width: 1px 0;
 }
-div#content article .date { font-size: 0.7em; }
+div#main div#content article .date { font-size: 0.7em; }

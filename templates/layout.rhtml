@@ -23,7 +23,7 @@
         <a href="/">
           <img id="logo" width="300" height="196" src="/images/gfxpro-logo.png" />
         </a>
-        <ul id="navigation" class="ui-accordion active">
+        <ul id="navigation">
 <%
   def nav_link(name, title)
     "<li #{name == @path ? "class=\"active\"" : ""}><a href=\"/#{name}\">#{title}</a></li>"
@@ -36,10 +36,9 @@
           <%= nav_link("index", "Blog") %>
           <%= nav_link("contact", "Kontakt") %>
         </ul>
-        <div class="clearer"></div>
-        <div id="content">
-          <%= yield %> 
-        </div>
+      </div>
+      <div id="content">
+        <%= yield %> 
       </div>
     </div>
       <script type="text/javascript">

@@ -139,7 +139,9 @@ div#main div#content p {
   line-height: 1.5em;
   margin: 1em 0;
 }
-div#main div#content p img {
+div#main div#content p img#photo {
+  width: 120px;
+  height: 120px;
   float: left;
   margin: 0 20px 5px 0;
   -webkit-transform: rotate(-2deg);
@@ -148,6 +150,34 @@ div#main div#content p img {
   -moz-box-shadow: 0 0 3px black;
   -webkit-box-shadow: 0 0 3px black;
 }
+div#main div#content ul {
+  width: 100%;
+  padding: 0;
+  margin: 3em 0 4em;
+  height: 150px;
+  position: relative;
+}
+div#main div#content ul li {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  display: block;
+  width: 50%;
+  text-align: center;
+}
+div#main div#content ul li img {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+div#main div#content ul li#web_apps { left: 0; }
+div#main div#content ul li#web_apps span#and {
+  font-size: 4em;
+  position: absolute;
+  top: 30px;
+  left: 90%;
+}
+div#main div#content ul li#mobile_apps { left: 50%; }
 div#main div#content em { font-style: normal; }
 div#main div#content article {
   margin-bottom: 1.5em;

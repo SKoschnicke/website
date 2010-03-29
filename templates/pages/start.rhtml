@@ -1,15 +1,24 @@
-
-  <h1 class="start" >Hallo.</h1>
-  <p id="intro">
-    Mein Name ist <em>Sven Koschnicke</em> und ich entwickle <em>Web-Anwendungen</em>.
-  </p>
-  <p>
-    <img src="http://www.gravatar.com/avatar/<%= Digest::MD5.hexdigest('s.koschnicke@gfxpro.com') %>?s=120" width="120" height="120" style="width: 120px; height: 120px; float: left;"/>
-    Dies tue ich nun schon seit <%= ((Time.now - Time.parse("2001/01/01")) / 60 / 60 / 24 / 365).round %> Jahren unter dem Label GFXpro. Mit dem World-Wide-Web als Schwerpunkt.
-  </p>
-  <p>
-    Dies ist ein zweiter Absatz der etwas anderen Text hat damit es auch schoen realistisch bleibt. Ansonsten ist er aber wie der erste Absatz ohne Sinn.
-  </p>
-  <p>
-    Hier brauchen wir wirklich viele Absaetze. So langsam kann das doch nicht mehr sein. Wir wollen doch gar nicht so viel Text schreiben. Vielleicht sollte man mal ein Bild einbauen. Jetzt muss dieser Text auch noch so lang sein, dass wir genug Zeilen haben, um die Gitter-Ausrichtung beurteilen zu koennen. Jetzt liest garantiert keiner mehr mit.
-  </p>
+<h1 class="start" >Hallo.</h1>
+<p id="intro">
+  Mein Name ist <em>Sven Koschnicke</em> und ich entwickle
+</p>
+<ul>
+  <li id="web_apps">
+    <img src="images/laptop.png" alt="Web-Anwendungen" />
+    Web-Anwendungen <span id="and">&</span>
+  </li>
+  <li id="mobile_apps">
+    <img src="images/iphone.png" alt="Mobile Anwendungen" />
+    Mobile Anwendungen.
+  </li>
+</ul>
+<p>
+  <img id="photo" src="http://www.gravatar.com/avatar/<%= Digest::MD5.hexdigest('s.koschnicke@gfxpro.com') %>?s=120" width="120" height="120" />
+  Mein Ziel ist es dabei, aus guten Ideen aufregende Wirklichkeit werden zu lassen.
+</p>
+<p>
+  Dies tue ich nun schon seit <%= ((Time.now - Time.parse("2001/01/01")) / 60 / 60 / 24 / 365).round %> Jahren unter dem Label GFXpro.
+</p>
+<p>
+  Wenn Sie eine gute Idee haben, kontaktieren Sie mich.
+</p>

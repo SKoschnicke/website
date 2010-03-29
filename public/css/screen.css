@@ -133,7 +133,7 @@ div#main div#content h1.start {
 }
 div#main div#content p#intro {
   font-size: 1.3em;
-  margin: 2.5em 0;
+  margin: 2em 0;
 }
 div#main div#content p {
   line-height: 1.5em;
@@ -153,24 +153,25 @@ div#main div#content p img#photo {
 div#main div#content ul {
   width: 100%;
   padding: 0;
-  margin: 3em 0 4em;
-  height: 150px;
+  margin: 2.5em 0 4em;
+  height: 180px;
   position: relative;
 }
 div#main div#content ul li {
   position: absolute;
   padding: 0;
+  bottom: 0;
   margin: 0;
   display: block;
   width: 50%;
   text-align: center;
 }
 div#main div#content ul li img {
-  width: 50%;
   display: block;
   margin: 0 auto 0.5em;
 }
 div#main div#content ul li#web_apps { left: 0; }
+div#main div#content ul li#web_apps img { width: 60%; }
 div#main div#content ul li#web_apps span#and {
   font-size: 4em;
   position: absolute;
@@ -178,6 +179,10 @@ div#main div#content ul li#web_apps span#and {
   left: 90%;
 }
 div#main div#content ul li#mobile_apps { left: 50%; }
+div#main div#content ul li#mobile_apps img {
+  width: 40%;
+  margin-bottom: 30px;
+}
 div#main div#content em { font-style: normal; }
 div#main div#content article {
   margin-bottom: 1.5em;

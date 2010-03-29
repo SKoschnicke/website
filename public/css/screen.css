@@ -168,7 +168,7 @@ div#main div#content ul li {
 div#main div#content ul li img {
   width: 50%;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 0.5em;
 }
 div#main div#content ul li#web_apps { left: 0; }
 div#main div#content ul li#web_apps span#and {

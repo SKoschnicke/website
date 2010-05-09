@@ -184,6 +184,7 @@ div#main div#content ul#startpage li#mobile_apps img {
   margin-bottom: 30px;
 }
 div#main div#content em { font-style: normal; }
+div#main div#content address { margin-left: 68.5px; }
 div#main div#content article {
   margin-bottom: 1.5em;
   display: block;

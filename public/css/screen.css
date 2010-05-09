@@ -150,14 +150,14 @@ div#main div#content p img#photo {
   -moz-box-shadow: 0 0 3px black;
   -webkit-box-shadow: 0 0 3px black;
 }
-div#main div#content ul {
+div#main div#content ul#startpage {
   width: 100%;
   padding: 0;
   margin: 2.5em 0 4em;
   height: 180px;
   position: relative;
 }
-div#main div#content ul li {
+div#main div#content ul#startpage li {
   position: absolute;
   padding: 0;
   bottom: 0;
@@ -166,20 +166,20 @@ div#main div#content ul li {
   width: 50%;
   text-align: center;
 }
-div#main div#content ul li img {
+div#main div#content ul#startpage li img {
   display: block;
   margin: 0 auto 0.5em;
 }
-div#main div#content ul li#web_apps { left: 0; }
-div#main div#content ul li#web_apps img { width: 60%; }
-div#main div#content ul li#web_apps span#and {
+div#main div#content ul#startpage li#web_apps { left: 0; }
+div#main div#content ul#startpage li#web_apps img { width: 60%; }
+div#main div#content ul#startpage li#web_apps span#and {
   font-size: 4em;
   position: absolute;
   top: 30px;
   left: 90%;
 }
-div#main div#content ul li#mobile_apps { left: 50%; }
-div#main div#content ul li#mobile_apps img {
+div#main div#content ul#startpage li#mobile_apps { left: 50%; }
+div#main div#content ul#startpage li#mobile_apps img {
   width: 40%;
   margin-bottom: 30px;
 }
@@ -194,3 +194,4 @@ div#main div#content article h1 {
   border-width: 1px 0;
 }
 div#main div#content article .date { font-size: 0.7em; }
+div#main div#content a { color: #494339; }

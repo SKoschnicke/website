@@ -185,6 +185,25 @@ div#main div#content ul#startpage li#mobile_apps img {
 }
 div#main div#content em { font-style: normal; }
 div#main div#content address { margin-left: 68.5px; }
+div#main div#content ul#competence {
+  padding: 0;
+  list-style: none;
+}
+div#main div#content ul#competence li { margin: 30px 0; }
+div#main div#content ul#competence ul {
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+}
+div#main div#content ul#competence ul li {
+  margin: 20px;
+  width: 100px;
+  display: inline;
+}
+div#main div#content ul#competence ul li img {
+  width: 100px;
+  display: inline;
+}
 div#main div#content article {
   margin-bottom: 1.5em;
   display: block;

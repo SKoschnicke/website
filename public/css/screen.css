@@ -204,6 +204,7 @@ div#main div#content ul#competence ul li img {
   width: 100px;
   display: inline;
 }
+div#main div#content ul#competence ul li img#ipad { width: 160px; }
 div#main div#content article {
   margin-bottom: 1.5em;
   display: block;

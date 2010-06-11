@@ -1,14 +1,14 @@
 @font-face {
-  font-family: Honey;
-  src: url( /fonts/HONEY.TTF );
+  font-family: Fertigo;
+  src: url(/fonts/Fertigo_PRO.otf) format("opentype");
 }
 @font-face {
-  font-family: Baskerville;
-  src: url( /fonts/Baskerville.ttc );
+  font-family: Kaffeesatz;
+  src: url(/fonts/YanoneKaffeesatz-Light.otf) format("opentype");
 }
 @font-face {
-  font-family: Georgia;
-  src: url( /fonts/Georgia.ttf );
+  font-family: GraublauWeb;
+  src: url(fonts/GraublauWeb.otf) format("opentype");
 }
 html, body {
   height: 100%;
@@ -49,7 +49,7 @@ div#main div#sidebar {
   float: left;
   width: 343px;
   min-height: 500px;
-  font-family: Helvetica, Verdana, sans-serif;
+  font-family: GraublauWeb, Helvetica, Verdana, sans-serif;
 }
 div#main div#sidebar img#logo {
   float: left;
@@ -96,8 +96,8 @@ div#main div#sidebar ul#navigation li.active a {
 }
 div#main div#content {
   background-color: #fbf4da;
-  font-family: Baskerville, Palatino Linotype, Book Antiqua, Palatino, serif;
-  color: #494339;
+  font-family: Fertigo, Baskerville, Palatino Linotype, Book Antiqua, Palatino, serif;
+  color: #655a47;
   width: 485px;
   margin: 0 0 0 343px;
   padding: 78px 66px 2em 66px;
@@ -219,4 +219,4 @@ div#main div#content article h1 {
   border-width: 1px 0;
 }
 div#main div#content article .date { font-size: 0.7em; }
-div#main div#content a { color: #494339; }
+div#main div#content a { color: #655a47; }

@@ -14,17 +14,21 @@
  */
 
 @background-color: #FBF4DA;
+/*
 @text-color: #494339;
+*/
+@text-color: #655A47;
 @headings_color: #8B0000;
 @min-height: 500px;
 
+/*
 @font-face {
-  font-family: Honey ;
+  font-family: Honey;
   src: url( /fonts/HONEY.TTF );// format("truetype");
 }
 
 @font-face {
-  font-family: Baskerville ;
+  font-family: Baskerville;
   src: url( /fonts/Baskerville.ttc );// format("truetype");
 }
 
@@ -33,12 +37,28 @@
   src: url( /fonts/Georgia.ttf );// format("truetype");
 }
 
-/*
+
   @font-face {
     font-family: "PhontPhreaks Handwriting";
     src: url("/fonts/PhontPhreaks_Handwriting.ttf") format("truetype");
   }
 */
+
+@font-face {
+  font-family: Fertigo;
+  src: url(/fonts/Fertigo_PRO.otf) format("opentype");
+}
+
+@font-face {
+  font-family: Kaffeesatz;
+  src: url(/fonts/YanoneKaffeesatz-Light.otf) format("opentype");
+}
+
+@font-face {
+  font-family: GraublauWeb;
+  src: url(fonts/GraublauWeb.otf) format("opentype");
+}
+
 
 html, body {
   height: 100%;
@@ -89,7 +109,7 @@ div#main {
     float: left;
     width: 343px;
     min-height: @min-height;
-    font-family: Helvetica, Verdana, sans-serif;
+    font-family: GraublauWeb, Helvetica, Verdana, sans-serif;
 
     img#logo {
       float: left;
@@ -149,7 +169,7 @@ div#main {
 
   div#content {
     background-color: @background-color;
-    font-family: Baskerville, Palatino Linotype, Book Antiqua, Palatino, serif;
+    font-family: Fertigo, Baskerville, Palatino Linotype, Book Antiqua, Palatino, serif;
     color: @text-color;
     width: 485px; /* 617 = 2 * 66 + 485 */
     margin: 0 0 0 343px;

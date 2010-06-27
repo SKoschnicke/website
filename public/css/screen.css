@@ -183,6 +183,7 @@ div#main div#content address {
   font-style: normal;
   line-height: 1.5em;
 }
+div#main div#content p#bank { line-height: 1em; }
 div#main div#content ul#competence {
   padding: 0;
   list-style: none;

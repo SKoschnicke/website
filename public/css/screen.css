@@ -103,7 +103,6 @@ div#main div#content h1 {
   font-weight: normal;
   padding: 0 0 0 66px;
   margin: 0 0 0 -66px;
-  font-family: Georgia, Baskerville, Palatino Linotype, Book Antiqua, Palatino, serif;
   color: #8b0000;
 }
 div#main div#content h1 a {
@@ -181,9 +180,11 @@ div#main div#content em { font-style: normal; }
 div#main div#content address {
   margin-left: 68.5px;
   font-style: normal;
-  line-height: 1.5em;
+  line-height: 1.2em;
 }
-div#main div#content p#bank { line-height: 1em; }
+div#main div#content p#bank { line-height: 1.2em; }
+div#main div#content p#primary_contact_info { margin: 4em 0; }
+div#main div#content p.unimportant { font-size: 0.7em; }
 div#main div#content ul#competence {
   padding: 0;
   list-style: none;

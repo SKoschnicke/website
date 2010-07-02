@@ -187,6 +187,7 @@ div#main div#content p#primary_contact_info { margin: 4em 0; }
 div#main div#content p.unimportant { font-size: 0.7em; }
 div#main div#content ul#competence {
   padding: 0;
+  margin: 0;
   list-style: none;
 }
 div#main div#content ul#competence li {

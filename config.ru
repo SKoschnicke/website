@@ -36,6 +36,7 @@ toto = Toto::Server.new do
   set :date, lambda {|now| now.strftime("%d.%m.%Y") }
 end
 
+
 run toto
 
 

@@ -1,5 +1,6 @@
 html, body {
   width: 100%;
+  background-image: none;
 }
 img#background {
   display: none;
@@ -7,22 +8,36 @@ img#background {
 
 div#main {
 
-  div#sidbar {
+  width: 963px;
+
+  div#sidebar {
+
+    background-color: #2B1C13;
+    height: 500px;
 
     ul#navigation {
-      
-      width: 343px;
 
+      margin-left: 52px;
       li {
         a {
-          width: 275px;
+          background-color: #A0A0A0;
+        }
+        a:hover {
+          background-color: #B8B8B8;
         }
       }
     }
   }
 
   div#content {
-    display: none;
+
+    ul#competence {
+
+      li {
+        padding: 5px;
+      }
+
+    }
   }
 
 }
@@ -33,7 +48,6 @@ div#main {
 
 /* add display:inline to floated elements */
 div#main div#sidebar,
-div#main div#sidebar img#logo,
 div#main div#sidebar ul#navigation,
 div#main div#content p img#photo {display:inline;}
 

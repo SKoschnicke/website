@@ -1,0 +1,5 @@
+div#main {
+  background: transparent;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000040,endColorstr=#00000040);
+  zoom: 1;
+}

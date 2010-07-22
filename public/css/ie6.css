@@ -1,0 +1,23 @@
+html, body {
+  width: 100%;
+  background-image: none;
+}
+img#background { display: none; }
+div#main { width: 963px; }
+div#main div#sidebar {
+  background-color: #2b1c13;
+  height: 500px;
+}
+div#main div#sidebar ul#navigation { margin-left: 52px; }
+div#main div#sidebar ul#navigation li a { background-color: #a0a0a0; }
+div#main div#sidebar ul#navigation li a:hover { background-color: #b8b8b8; }
+div#main div#content ul#competence li { padding: 5px; }
+div#main div#sidebar { display: inline; }
+div#main div#sidebar ul#navigation { display: inline; }
+div#main div#content p img#photo { display: inline; }
+div#main div#content h1 {
+  position: relative;
+  zoom: 1;
+}
+div#main { zoom: 1; }
+div#main div#content ul#startpage { zoom: 1; }

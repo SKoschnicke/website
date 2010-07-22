@@ -10,9 +10,9 @@ if ENV['RACK_ENV'] == 'development'
 end
 
 if ENV['RACK_ENV'] == 'production'
-  use Rack::Auth::Basic, "GFXpro Relaunch private beta" do |username, password|
-    'newsite' == password
-  end
+#  use Rack::Auth::Basic, "GFXpro Relaunch private beta" do |username, password|
+#    'newsite' == password
+#  end
 end
 
 #

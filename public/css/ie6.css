@@ -5,7 +5,9 @@ html, body {
 img#background { display: none; }
 div#main { width: 963px; }
 div#main div#sidebar {
+  behavior: url(css/PIE.htc);
   background-color: #2b1c13;
+  -pie-background: rgba(0, 0, 0, 0.4);
   height: 500px;
 }
 div#main div#sidebar ul#navigation { margin-left: 52px; }

@@ -1,0 +1,63 @@
+html, body {
+  width: 100%;
+  background-image: none;
+}
+img#background {
+  display: none;
+}
+
+div#main {
+
+  width: 963px;
+
+  div#sidebar {
+    behavior: url(css/PIE.htc);
+
+    background-color: #2B1C13;
+    -pie-background: rgba(0, 0, 0, 0.4);
+    height: 500px;
+
+    ul#navigation {
+
+      margin-left: 52px;
+      li {
+        a {
+          background-color: #A0A0A0;
+        }
+        a:hover {
+          background-color: #B8B8B8;
+        }
+      }
+    }
+  }
+
+  div#content {
+
+
+    ul#competence {
+
+      li {
+        padding: 5px;
+      }
+
+    }
+  }
+
+}
+/* IE6 css fixer v0.8: Wed, 21 Jul 2010 15:15:09 +0200 */
+
+/* ============================================= */
+/* safe settings                                 */
+
+/* add display:inline to floated elements */
+div#main div#sidebar,
+div#main div#sidebar ul#navigation,
+div#main div#content p img#photo {display:inline;}
+
+
+/* fix negative margins */
+div#main div#content h1 {position:relative; zoom:1;}
+
+/* add zoom:1 to pos:relative elements */
+div#main,
+div#main div#content ul#startpage {zoom:1;}

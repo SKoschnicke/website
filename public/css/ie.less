@@ -1,5 +1,24 @@
 div#main {
 
+  div#sidebar {
+    behavior: url(css/PIE.htc);
+    -pie-background: rgba(0, 0, 0, 0.4);
+
+    ul#navigation {
+      li a {
+        behavior: url(css/PIE.htc);
+        -pie-background: rgba(160,160,160, 0.5);
+      }
+      li a:hover {
+        -pie-background: rgba(160,160,160, 1);
+      }
+
+      li.active a {
+        -pie-background: rgba(224,224,224, 1);
+      }
+    }
+  }
+
   div#content {
     behavior: url(css/PIE.htc);
   }

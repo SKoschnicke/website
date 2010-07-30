@@ -1,5 +1,8 @@
 
 require 'toto'
+require 'rack-rewrite'
+
+DOMAIN = 'www.gfxpro.com'
 
 # Rack config
 use Rack::Static, :urls => ['/css', '/javascript', '/images', '/fonts', '/favicon.ico'], :root => 'public'
@@ -10,9 +13,12 @@ if ENV['RACK_ENV'] == 'development'
 end
 
 if ENV['RACK_ENV'] == 'production'
-  use Rack::Auth::Basic, "GFXpro Relaunch private beta" do |username, password|
-    'newsite' == password
-  end
+#  use Rack::Auth::Basic, "GFXpro Relaunch private beta" do |username, password|
+#    'newsite' == password
+#  end
+  r301 %r{.*}, "http://#{DOMAIN}$&", :if => Proc.new {|rack_env|
+    rack_env['SERVER_NAME'] != DOMAIN
+  }
 end
 
 Rack::Mime::MIME_TYPES.merge!({

@@ -1,6 +1,6 @@
 
 require 'toto'
-require 'rack-rewrite'
+require 'rack/rewrite'
 
 DOMAIN = 'www.gfxpro.com'
 
@@ -16,9 +16,11 @@ if ENV['RACK_ENV'] == 'production'
 #  use Rack::Auth::Basic, "GFXpro Relaunch private beta" do |username, password|
 #    'newsite' == password
 #  end
-  r301 %r{.*}, "http://#{DOMAIN}$&", :if => Proc.new {|rack_env|
-    rack_env['SERVER_NAME'] != DOMAIN
-  }
+  use Rack::Rewrite do
+    r301 %r{.*}, "http://#{DOMAIN}$&", :if => Proc.new {|rack_env|
+      rack_env['SERVER_NAME'] != DOMAIN
+    }
+  end
 end
 
 Rack::Mime::MIME_TYPES.merge!({

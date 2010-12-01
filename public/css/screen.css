@@ -237,6 +237,10 @@ div#main div#content ul#startpage li {
 div#main div#content ul#startpage li img {
   display: block;
   margin: 0 auto 0.5em;
+  border: none;
+}
+div#main div#content ul#startpage li a {
+  text-decoration: none;
 }
 div#main div#content ul#startpage li#web_apps {
   left: 0;
@@ -272,6 +276,9 @@ div#main div#content p#primary_contact_info {
   margin: 4em 0;
 }
 div#main div#content p.unimportant {
+  font-size: 0.7em;
+}
+div#main div#content address.unimportant {
   font-size: 0.7em;
 }
 div#main div#content ul#competence {

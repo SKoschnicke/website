@@ -1,0 +1,5 @@
+source "http://gemcutter.org"
+gem "builder"
+gem "rdiscount"
+gem "toto"
+gem "rack-rewrite"

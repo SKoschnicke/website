@@ -6,7 +6,7 @@ require 'rack/rewrite'
 DOMAIN = 'www.gfxpro.com'
 
 # Rack config
-use Rack::Static, :urls => ['/css', '/javascript', '/images', '/fonts', '/favicon.ico'], :root => 'public'
+use Rack::Static, :urls => ['/css', '/javascript', '/images', '/fonts', '/favicon.ico', '/downloads'], :root => 'public'
 use Rack::CommonLogger
 
 if ENV['RACK_ENV'] == 'development'

@@ -1,6 +1,0 @@
---- 
-title: An article with a quite long title
-date: 14/02/2010
-
-Once upon a time...
-

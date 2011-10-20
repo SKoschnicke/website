@@ -50,3 +50,4 @@ Weiteres:
 - Bezug auf Scrum und Agile Manifesto
 - Automatisierung aller Schritte ist wichtig (vor allem build, release, deploy), wird aber nicht weiter behandelt, evtl. kurz erwaehnen
 - Wie ein Workflow helfen kann die Qualitaet der Software zu erhoehen http://kev.inburke.com/kevin/the-best-ways-to-find-bugs-in-your-code/
+- PSP http://en.wikipedia.org/wiki/Personal_Software_Process

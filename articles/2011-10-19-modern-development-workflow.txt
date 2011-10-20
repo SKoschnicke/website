@@ -14,17 +14,36 @@ get into the way of the real work. I will describe a workflow that does just
 that by using modern technologies to support developers at every possible
 degree.
 
+Motivationen
+
+Irgendwann geraet man in die Situation wo selbstorganisiertes Zusammenarbeiten nicht mehr funktioniert weil
+- neue Leute zum Team dazukommen
+- das Team zu gross wird
+- die Codebase zu gross wird, als dass jeder immer alle Teile im Blick behalten kann
+- Fehler oder doppelte Implementierungen entstehen, weil der eine nicht weiss was der andere gemacht hat
+
+Warum ein Chat?
+
+Direkte Kommunikation ist meistens klarer und schneller. Aber:
+- erfordert oertliche Naehe
+- findet nur zwischen zwei Personen statt -> alle anderen bekommen nichts mit
+  oder
+- alle koennen/muessen (Meeting) mithoeren -> Zeit wird verschwendet da die Leute nicht selbst filtern koennen (Meeting) oder gerade was anderes tun wollen (Grossraumbuero)
+- ist synchron, man kann etwas besprochenes nicht spaeter nachlesen
 
 Tools:
-- Git
+- Git, http://whygitisbetterthanx.com
 - GitHub
-  - Wiki
+  - Wiki (oder irgendein anderes Wiki)
   - Pull requests
-- Flowdock
-- Quassum
+- Realtime-Chat: Flowdock / Campfire / IRC / Skype
+- Quassum (oder GitHub Issues, PivotalTracker)
 
 Vorteile:
 - Asynchronitaet
 - Standortunabhaengigkeit
 - Wissenstransfer (durch die Pull-Requests)
 - Skaliert (GitHub benutzt es mit [to_research] Mitarbeitern)
+
+Weiteres:
+- Stackoverflow

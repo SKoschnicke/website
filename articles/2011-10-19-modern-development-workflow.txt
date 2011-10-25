@@ -36,9 +36,9 @@ order.
 If a developer needs information about a part of the software he doesn't know
 and the information is not written down somewhere (as comment, in a
 documentation-system or as an automation-script to describe a process) he has
-to get it from another developer who has the information. Even if the developer
+to get it from another developer who has the information. Even if this developer
 is available at this time, the information-transfer takes time in which the
-knowing developer can't get work done.
+both developers can't get other work done.
 
 ---
 
@@ -81,3 +81,4 @@ Weiteres:
 - Wie ein Workflow helfen kann die Qualitaet der Software zu erhoehen http://kev.inburke.com/kevin/the-best-ways-to-find-bugs-in-your-code/
 - PSP http://en.wikipedia.org/wiki/Personal_Software_Process
 - IBM Jazz, Spezifikationen zur Integration aller Tools eines Entwicklungsprozesses http://www.jazz.net
+- UNICASE (frueher Sysiphus), wie IBM Jazz, entwickelt als open source von TU Muenchen http://sysiphus.in.tum.de/

@@ -14,6 +14,34 @@ get into the way of the real work. I will describe a workflow that does just
 that by using modern technologies to support developers at every possible
 degree.
 
+# Motivation
+
+In every software-project there will be a point where not every developer has
+full knowledge about every aspect of the developed software. This may happen
+because the team gets so big that the informal information-flow doesn't suffice
+to provide everyone with every change made or because new developers join the
+team. Even if there are very few developers some details about the software
+will be lost after some time because people simply forget things.
+
+Lost knowledge leads to duplication of functions and, at worst, to bugs due to
+incorrect usage of functions. In general it reduces the code-quality of the
+project.
+
+Another aspect of insufficient information is the problem that with a bigger
+number of developers working on an project in parallel, deciding who should do
+what gets more difficult. More information has to be exchanged with more people
+in order to decide what are the next things to do and who should do it in which
+order.
+
+If a developer needs information about a part of the software he doesn't know
+and the information is not written down somewhere (as comment, in a
+documentation-system or as an automation-script to describe a process) he has
+to get it from another developer who has the information. Even if the developer
+is available at this time, the information-transfer takes time in which the
+knowing developer can't get work done.
+
+---
+
 Motivationen
 
 Irgendwann geraet man in die Situation wo selbstorganisiertes Zusammenarbeiten nicht mehr funktioniert weil
@@ -34,8 +62,8 @@ Direkte Kommunikation ist meistens klarer und schneller. Aber:
 Tools:
 - Git, http://whygitisbetterthanx.com
 - GitHub
-  - Wiki (oder irgendein anderes Wiki)
-  - Pull requests
+  - Github-Wiki (oder irgendein anderes Wiki)
+  - Pull requests zum Code Review und Verteilung von Wissen
 - Realtime-Chat: Flowdock / Campfire / IRC / Skype
 - Quassum (oder GitHub Issues, PivotalTracker)
 
@@ -44,6 +72,7 @@ Vorteile:
 - Standortunabhaengigkeit
 - Wissenstransfer (durch die Pull-Requests)
 - Skaliert (GitHub benutzt es mit [to_research] Mitarbeitern)
+- Sichtbarkeit (GitHub zeigt, was vorgeht. Ein einfaches SCMS verbirgt dies)
 
 Weiteres:
 - Stackoverflow
@@ -51,3 +80,4 @@ Weiteres:
 - Automatisierung aller Schritte ist wichtig (vor allem build, release, deploy), wird aber nicht weiter behandelt, evtl. kurz erwaehnen
 - Wie ein Workflow helfen kann die Qualitaet der Software zu erhoehen http://kev.inburke.com/kevin/the-best-ways-to-find-bugs-in-your-code/
 - PSP http://en.wikipedia.org/wiki/Personal_Software_Process
+- IBM Jazz, Spezifikationen zur Integration aller Tools eines Entwicklungsprozesses http://www.jazz.net

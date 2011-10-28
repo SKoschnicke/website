@@ -74,6 +74,12 @@ Vorteile:
 - Skaliert (GitHub benutzt es mit [to_research] Mitarbeitern)
 - Sichtbarkeit (GitHub zeigt, was vorgeht. Ein einfaches SCMS verbirgt dies)
 
+VMs:
+- http://programmers.stackexchange.com/questions/114673/should-a-development-machine-be-inside-a-vm
+- http://programmers.stackexchange.com/questions/103501/thoughts-on-development-using-virtual-machines
+- http://programmers.stackexchange.com/questions/115177/how-to-decrease-errors-before-testing
+- http://programmers.stackexchange.com/questions/87152/development-methodology-for-single-web-developer
+
 Weiteres:
 - Stackoverflow
 - Bezug auf Scrum und Agile Manifesto

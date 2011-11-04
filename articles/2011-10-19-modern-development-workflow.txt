@@ -16,12 +16,12 @@ degree.
 
 # Motivation
 
-In every software-project there will be a point where not every developer has
-full knowledge about every aspect of the developed software. This may happen
-because the team gets so big that the informal information-flow doesn't suffice
-to provide everyone with every change made or because new developers join the
-team. Even if there are very few developers some details about the software
-will be lost after some time because people simply forget things.
+In every software-project there will be a point where every developer has only
+partial knowledge about the developed software. This may happen because the
+team gets so big that the informal information-flow doesn't suffice to provide
+everyone with every change made or because new developers join the team. Even
+if there are very few developers some details about the software will be lost
+after some time because people simply forget things.
 
 Lost knowledge leads to duplication of functions and, at worst, to bugs due to
 incorrect usage of functions. In general it reduces the code-quality of the
@@ -36,9 +36,119 @@ order.
 If a developer needs information about a part of the software he doesn't know
 and the information is not written down somewhere (as comment, in a
 documentation-system or as an automation-script to describe a process) he has
-to get it from another developer who has the information. Even if this developer
-is available at this time, the information-transfer takes time in which the
-both developers can't get other work done.
+to get it from another developer who has the information. Even if this
+developer is available at this time, the information-transfer takes time in
+which both developers can't get other work done.
+
+Information needs to be available to all developers without bothering other
+team members. The classic approach to this problem is using some sort of
+documentation system, mostly a wiki, to store information. But this will only
+capture a part of the whole information in the team. Much details are never
+stored in the documentation system, it travels across the team by occasional
+chats. These details are not available most of the time to most of the team but
+might be the reason for new bugs or inefficient design of the software.
+
+Developers are used to getting information by using technology, a big part of
+their work is getting information about how some library works or why a
+function could be slower than expected. Finding this information became second
+nature to them, they are very efficient in it. If they are forced to retrieve
+information they need by walking around and asking someone it will slow them
+down radically. Developer hate to be slowed down.
+
+# Capture everything
+
+How can every relevant information be captured and the development workflow
+improved at the same time? By giving the developers new tools. Developers love
+tools, but they have to be very good or they will be abandoned. They need to
+make developers live easier.
+
+There are three fields in a development project in which information has to be
+captured: The code, the problem domain and the environment.
+
+## The code
+
+This is the area developers are most comfortably, they know how to code and
+most also know how to write understandable and maintainable code, that is what
+they practiced most. There are vast amounts of books and articles about writing
+good code and designing great software, it will not be scope of this article.
+An important part in the area of code when it comes to collaboration is the
+usage of a source code management system. This is essential for every
+successful team.
+
+### Git
+
+We are in the third generation of source code management
+systems and there are some good alternatives to choose from. Anyway, one system
+has made a triumph in the last few years, adopted by many developers in short
+time. This system is called "Git" and is the fundament of the workflow
+presented. Git makes branching and, more important, merging of branches very
+easy, this enables developers to create branches for every feature and bugfix.
+The process is:
+
+* There is one main branch called "master" which is deployable at any time.
+* When a developer wants to implement a new feature or fix a bug he creates a
+  branch from the master-branch and starts implementing.
+* He can make commits to his branch as much as he likes without affecting anyone
+  else, he can also merge new things from the master branch into his branch if
+  they are relevant for his development.
+* When the feature is ready, the branch is merged into the master-branch and the
+  developer-branch is deleted.
+
+Using branches has several advantages: Developers working on different features
+are not hindering each other, commiting changes will not affect anyone else and
+therefor developers are commiting more often, which creates a finer granularity
+of changes and captures more information about the implementation. The current
+branches reflect where work is being done, this contributes to information
+distribution in the team.
+
+### GitHub
+
+On top of Git there is GitHub, a webapp for hosting Git-repositories and
+managing development. GitHub is another good reason why to use Git for source
+code management. GitHub provides a web-interface for browsing the code and the
+commits, lets everyone comment on commits and adds an issue tracker and a wiki
+to the project. By having a web-interface to the full source code, referencing
+to specific lines of code is as easy as sharing a link. Seeing and commenting
+on commits supports collaboration. Integrated issue-tracking makes it easier to
+define relations between issues and commits. The wiki is a Git-repository by
+itself, so developers can work on it with their editor of choice or in the
+web-interface, which encourages changes to the wiki. Developers will not use
+something if they don't like how they have to use it, giving them the choice to
+use their way will make them use it more often.
+
+### Code review
+
+Code review is an important practice for distributing information about the
+developed system across the team and sharing development knowledge between
+developers. Both results in an improvement of the overall code quality. Code
+reviews are very well integrated by GitHubs pull requests. When a developer has
+finished work on his branch, he creates a pull request in GitHub to merge the
+changes into the master-branch. Everyone gets notified and at least one other
+developer looks at the changes, for which GitHub provides a very nice
+interface, and approved them or comments on them. If there is need for
+improvement, the creater of the pull request changes the code and commits on
+his developer branch, which is directly reflected in the pull-request on GitHub
+and can then be approved by some other developer. If everything is fine, GitHub
+provides the functionality of merging the developer branch into master with the
+push of a button. The pull request is then closed and contributes to the
+history of changes to the software which every developer may access through
+GitHub.
+
+## The problem domain
+
+Code is not written for the sake of code being written, but to solve problems,
+mostly business-related problems. To understand these problems is the first
+step to solve them. Domain specific knowledge is required. This knowledge is
+ideally available to all developers, all the time. In practice, there is one
+domain expert, who is normally no developer. Developers need to talk to him, to
+gain domain knowledge and these information will be tracked in a wiki to enable
+later access. Everyone participating in a project needs access to the wiki, so
+it needs to be easily editable and always accessable. Almost every wiki meets
+these criteria, but the wiki which GitHub provides is a good choice because it's
+hosted and maintained by experts and has no disadvantages over other solutions.
+It is just another Git-repository consisting of text files, so integration
+with other tools to process the data in the wiki or migration to other
+solutions later is very easy.
 
 ---
 

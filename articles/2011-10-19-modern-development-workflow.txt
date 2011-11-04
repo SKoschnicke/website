@@ -150,6 +150,23 @@ It is just another Git-repository consisting of text files, so integration
 with other tools to process the data in the wiki or migration to other
 solutions later is very easy.
 
+## The environment
+
+Software needs, beside a compiler or interpreter a growing set of libraries and
+other software like databases and webservers. These components define the
+environment in which the software lives. The environment needs to be maintained
+and curated and because developers are (hopefully) the ones who decide how the
+environment should look like, it's their job to create and maintain it.
+
+### Development
+
+
+### Production
+
+Agile methodologies and web-based applications created the trend towards short release cycles.
+
+
+
 ---
 
 Motivationen

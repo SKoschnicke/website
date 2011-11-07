@@ -166,7 +166,9 @@ Especially projects which start using a technology stack the developers aren't f
 
 Agile methodologies and web-based applications created the trend towards short release cycles. Releasing a software can be a complex process which grows together with the software. At the start of a development project, the release is often seen as a point far in the future where the software is complete, without bugs and beautifully designed. Truth is that the release date comes faster than expected and nobody has time because everyone is still busy fixing bugs or implementing features. The release is just done somehow to let everyone get back to the important work. This leads to no defined process for release management. Releases will get harder and problems will arise from unclear defined version numbers and bugs slipping into production versions. The system to release the software needs to be set up together with the development environment and further developed as part of the software. Releasing the software should be possible at any time by any developer with one simple command. This is also the only way continous integration will work. How the release management is automated depends on the software developed. Server-based software has to be pushed to the production server, desktop software needs to be build and packaged for download. The continous integration server Hudson may be a good start for release management, but a much simpler system like a Capistrano-empowered script for production deploy might also work.
 
+## Everything else
 
+Now we have GitHub for the code, a wiki for the domain knowledge and automated environment creation and deploy to capture the processes needed to get started and get into production. This covers everything an average well organized software development team captures while creating software, but it lacks the ability to capture an informal, yet very important part of knowledge distribution. 
 
 ---
 

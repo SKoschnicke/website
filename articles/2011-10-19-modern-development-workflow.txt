@@ -144,7 +144,7 @@ domain expert, who is normally no developer. Developers need to talk to him, to
 gain domain knowledge and these information will be tracked in a wiki to enable
 later access. Everyone participating in a project needs access to the wiki, so
 it needs to be easily editable and always accessable. Almost every wiki meets
-these criteria, but the wiki which GitHub provides is a good choice because it's
+these criteria, but the wiki which GitHub provides is a good start because it's
 hosted and maintained by experts and has no disadvantages over other solutions.
 It is just another Git-repository consisting of text files, so integration
 with other tools to process the data in the wiki or migration to other
@@ -160,10 +160,11 @@ environment should look like, it's their job to create and maintain it.
 
 ### Development
 
+Especially projects which start using a technology stack the developers aren't familiar with, setting up a working and effective development environment is a difficult task. This environment needs to be created for every developer which gets tideous and creates the danger of slight differences (like different compiler versions) between environments. These differences lead to hard to reproduce bugs which only happen in one development environment. Setting up a new development environment because of hardware migration or team growth is as difficult as the first time, binding developer time which could be used better. Therefor development environments need to be cloneable very easy. With virtualization-support on hardware level, working in a completely virtualized system yields a very low performance penalty but has all properties needed for fast reproduction and migration of environments. Vagrant (www.vagrantup.com) makes it easy to manage multiple virtual machines based on Oracle VirtualBox for development environments focused on web-bases applications. But using only Oracle VirtualBox or another virtualization software without any automatic management might be easier depending on the project. A big advantage of Vagrant is that it uses Chef or Puppet for provisioning needed libraries or software which can be reused to setup the production system, too.
 
 ### Production
 
-Agile methodologies and web-based applications created the trend towards short release cycles.
+Agile methodologies and web-based applications created the trend towards short release cycles. Releasing a software can be a complex process which grows together with the software. At the start of a development project, the release is often seen as a point far in the future where the software is complete, without bugs and beautifully designed. Truth is that the release date comes faster than expected and nobody has time because everyone is still busy fixing bugs or implementing features. The release is just done somehow to let everyone get back to the important work. This leads to no defined process for release management. Releases will get harder and problems will arise from unclear defined version numbers and bugs slipping into production versions. The system to release the software needs to be set up together with the development environment and further developed as part of the software. Releasing the software should be possible at any time by any developer with one simple command. This is also the only way continous integration will work. How the release management is automated depends on the software developed. Server-based software has to be pushed to the production server, desktop software needs to be build and packaged for download. The continous integration server Hudson may be a good start for release management, but a much simpler system like a Capistrano-empowered script for production deploy might also work.
 
 
 

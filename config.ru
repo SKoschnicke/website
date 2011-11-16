@@ -3,7 +3,8 @@ require 'rubygems'
 require 'toto'
 require 'rack/rewrite'
 
-DOMAIN = 'www.gfxpro.com'
+#DOMAIN = 'www.gfxpro.com'
+DOMAIN = 'localhost'
 
 # Rack config
 use Rack::Static, :urls => ['/css', '/javascript', '/images', '/fonts', '/favicon.ico', '/downloads'], :root => 'public'
@@ -61,6 +62,7 @@ toto = Toto::Server.new do
   # set :cache,      28800                                    # cache duration, in seconds
 
   set :date, lambda {|now| now.strftime("%d.%m.%Y") }
+
 end
 
 

@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<% static_domain = 'static.gfxpro.com' %>
+<% static_domain = 'localhost:8080' %>
 <html class="no-js">
   <head>
     <title><%= title %></title>
@@ -7,23 +9,23 @@
     <meta name="google-site-verification" content="__HwzfTAiOSWPArJkjRa4AP_En7HL_JH6nfApwaZexE" />
     <link rel="alternate" type="application/atom+xml" title="<%= title %> - feed" href="/index.xml" />
 
-    <script src="http://static.gfxpro.com/javascript/modernizr-1.7.min.js"></script>
+    <script src="http://<%= static_domain %>/javascript/modernizr-1.7.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="http://static.gfxpro.com/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://<%= static_domain %>/css/screen.css" />
 <!--[if IE]>
-    <link rel="stylesheet" type="text/css" href="http://static.gfxpro.com/css/ie.css" />
+    <link rel="stylesheet" type="text/css" href="http://<%= static_domain %>/css/ie.css" />
 <![endif]-->
 <!--[if lt IE 7.]>
-    <link rel="stylesheet" type="text/css" href="http://static.gfxpro.com/css/ie6.css" />
+    <link rel="stylesheet" type="text/css" href="http://<%= static_domain %>/css/ie6.css" />
 <![endif]-->
     <link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <img id="background" src="http://static.gfxpro.com/images/background.jpg" alt="wooden background" />
+    <img id="background" src="http://<%= static_domain %>/images/background.jpg" alt="wooden background" />
     <div id="main">
       <div id="sidebar">
         <a href="/">
-          <img id="logo" width="300" height="196" src="http://static.gfxpro.com/images/gfxpro-logo.png" />
+          <img id="logo" width="300" height="196" src="http://<%= static_domain %>/images/gfxpro-logo.png" />
         </a>
         <ul id="navigation">
 <%

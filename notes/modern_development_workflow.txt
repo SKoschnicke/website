@@ -1,0 +1,50 @@
+
+
+---
+
+Motivationen
+
+Irgendwann geraet man in die Situation wo selbstorganisiertes Zusammenarbeiten nicht mehr funktioniert weil
+- neue Leute zum Team dazukommen
+- das Team zu gross wird
+- die Codebase zu gross wird, als dass jeder immer alle Teile im Blick behalten kann
+- Fehler oder doppelte Implementierungen entstehen, weil der eine nicht weiss was der andere gemacht hat
+
+Warum ein Chat?
+
+Direkte Kommunikation ist meistens klarer und schneller. Aber:
+- erfordert oertliche Naehe
+- findet nur zwischen zwei Personen statt -> alle anderen bekommen nichts mit
+  oder
+- alle koennen/muessen (Meeting) mithoeren -> Zeit wird verschwendet da die Leute nicht selbst filtern koennen (Meeting) oder gerade was anderes tun wollen (Grossraumbuero)
+- ist synchron, man kann etwas besprochenes nicht spaeter nachlesen
+
+Tools:
+- Git, http://whygitisbetterthanx.com
+- GitHub
+  - Github-Wiki (oder irgendein anderes Wiki)
+  - Pull requests zum Code Review und Verteilung von Wissen
+- Realtime-Chat: Flowdock / Campfire / IRC / Skype
+- Quassum (oder GitHub Issues, PivotalTracker)
+
+Vorteile:
+- Asynchronitaet
+- Standortunabhaengigkeit
+- Wissenstransfer (durch die Pull-Requests)
+- Skaliert (GitHub benutzt es mit [to_research] Mitarbeitern)
+- Sichtbarkeit (GitHub zeigt, was vorgeht. Ein einfaches SCMS verbirgt dies)
+
+VMs:
+- http://programmers.stackexchange.com/questions/114673/should-a-development-machine-be-inside-a-vm
+- http://programmers.stackexchange.com/questions/103501/thoughts-on-development-using-virtual-machines
+- http://programmers.stackexchange.com/questions/115177/how-to-decrease-errors-before-testing
+- http://programmers.stackexchange.com/questions/87152/development-methodology-for-single-web-developer
+
+Weiteres:
+- Stackoverflow
+- Bezug auf Scrum und Agile Manifesto
+- Automatisierung aller Schritte ist wichtig (vor allem build, release, deploy), wird aber nicht weiter behandelt, evtl. kurz erwaehnen
+- Wie ein Workflow helfen kann die Qualitaet der Software zu erhoehen http://kev.inburke.com/kevin/the-best-ways-to-find-bugs-in-your-code/
+- PSP http://en.wikipedia.org/wiki/Personal_Software_Process
+- IBM Jazz, Spezifikationen zur Integration aller Tools eines Entwicklungsprozesses http://www.jazz.net
+- UNICASE (frueher Sysiphus), wie IBM Jazz, entwickelt als open source von TU Muenchen http://sysiphus.in.tum.de/

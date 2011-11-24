@@ -3,8 +3,7 @@ require 'rubygems'
 require 'toto'
 require 'rack/rewrite'
 
-#DOMAIN = 'www.gfxpro.com'
-DOMAIN = 'localhost'
+DOMAIN = 'www.gfxpro.com'
 
 # Rack config
 use Rack::Static, :urls => ['/css', '/javascript', '/images', '/fonts', '/favicon.ico', '/downloads'], :root => 'public'

@@ -28,5 +28,9 @@ div#main div#content ul#network{padding:0;list-style:none;}div#main div#content 
 div#main div#content ul#network li a:hover{background-color:#E0E0E0;color:#303030;-moz-border-radius:10px;-webkit-border-radius:10px;}
 div#main div#content article{margin-bottom:1.5em;display:block;}div#main div#content article h1{border-color:#D7D4C7;border-style:solid;border-width:1px 0;}
 div#main div#content article .date{font-size:0.7em;}
+div#main div#content article section h1{margin-top:1.2em;border-style:none;}
+div#main div#content article section h2{margin-top:2em;}
+div#main div#content article section h3{margin-top:2em;}
+div#main div#content article section li{line-height:1.5em;margin:0.6em 0;}
 div#main div#content a{color:#655a47;}
 div#main div#content a.phone{text-decoration:none;}

@@ -61,6 +61,7 @@ toto = Toto::Server.new do
   # set :cache,      28800                                    # cache duration, in seconds
 
   set :date, lambda {|now| now.strftime("%d.%m.%Y") }
+
 end
 
 

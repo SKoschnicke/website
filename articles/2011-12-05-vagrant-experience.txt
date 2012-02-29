@@ -1,8 +1,0 @@
-title: "Vagrant experience"
-date: 2011/12/05
-slug: vagrant-experience
-
-- run vagrant with gui option enabled
-- when box is started, login via gui and restart network sudo
-  /etc/init.d/networking restart
-- vagrant should continue to setup the box

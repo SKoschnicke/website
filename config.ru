@@ -26,11 +26,13 @@ if ENV['RACK_ENV'] == 'production'
   end
 end
 
+=begin
 use Rack::Rewrite do
   r301 '/competence', '/kompetenz'
   r301 '/contact', '/kontakt'
   r301 '/network', '/netzwerk'
 end
+=end
 
 Rack::Mime::MIME_TYPES.merge!({
   ".ogg"     => "application/ogg",

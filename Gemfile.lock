@@ -17,4 +17,7 @@ DEPENDENCIES
   builder
   rack-rewrite
   rdiscount
-  toto
+  toto (~> 0.4.9)
+
+BUNDLED WITH
+   1.10.4

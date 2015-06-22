@@ -8,6 +8,8 @@ DOMAIN = 'www.gfxpro.com'
 # Rack config
 use Rack::Static, :urls => ['/css', '/javascript', '/images', '/fonts', '/favicon.ico', '/downloads'], :root => 'public'
 use Rack::CommonLogger
+use Rack::ContentType, "text/html"
+use Rack::ContentLength
 
 if ENV['RACK_ENV'] == 'development'
   use Rack::ShowExceptions

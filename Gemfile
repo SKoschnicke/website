@@ -1,5 +1,5 @@
 source "http://gemcutter.org"
-ruby '2.1'
+ruby '2.1.0'
 
 gem "builder"
 gem "rdiscount"

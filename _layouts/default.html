@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% include head.html %}
+  <body>
+    <img id="background" src="{{"/images/background.jpg" | prepend: site.baseurl}}" alt="wooden background" />
+    <div id="main">
+      <div id="sidebar">
+        <a href="/">
+          <img id="logo" width="300" height="196" src="{{"/images/gfxpro-logo.png" | prepend: site.baseurl }}" />
+        </a>
+        <ul id="navigation">
+          {% assign pages_in_order = site.pages | sort: "order" %}
+          {% for p in pages_in_order %}
+            {% if p.title %}
+              <li {% if p.url == page.url %}class="active"{% endif %}><a class="page-link" href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a></li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+      <div id="content">
+        {{ content }}
+      </div>
+    </div>
+  </body>
+</html>
+

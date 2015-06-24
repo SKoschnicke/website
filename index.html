@@ -1,3 +1,6 @@
+---
+layout: page
+---
 <h1 class="start" >Hallo.</h1>
 <p id="intro">
   Mein Name ist <em>Sven Koschnicke</em> und ich entwickle
@@ -18,8 +21,8 @@
 </ul>
 <p>
   Mein Ziel ist es dabei, gute Ideen aufregende Wirklichkeit werden zu lassen.
-  Dies tue ich nun schon seit <%= ((Time.now - Time.parse("2001/01/01")) / 60 / 60 / 24 / 365).round %> Jahren unter dem Label GFXpro.
+  Dies tue ich nun schon seit {{'now' | date: "%Y" | minus : 2000}} Jahren unter dem Label GFXpro.
 </p>
 <p>
-  Wenn Sie eine gute Idee haben, <a href="contact">kontaktieren Sie mich</a>.
+  Wenn Sie eine gute Idee haben, <a href="kontakt">kontaktieren Sie mich</a>.
 </p>

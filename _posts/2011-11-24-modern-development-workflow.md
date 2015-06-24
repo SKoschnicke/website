@@ -1,12 +1,15 @@
+---
+layout: post
 title: "Modern development workflow"
 date: 2011/11/24
 slug: modern-development-workflow
+---
 
 Developing high-quality software in little time is hard when you are a single developer, but it gets even harder when you are a group of developers working on the same project. Technology can enable us to work better together without forcing everyone into tight regulations on how, when and where they do their work.
 
 Of course, without some rules about the workflow, structured collaboration is unlikely to happen, so there needs to be some rules, but they should not get into the way of the real work. I will describe a workflow that does just that by using modern technologies to support developers at every possible degree.
 
----
+<!--more-->
 
 # Information is critical
 

@@ -1,15 +1,46 @@
-# Site settings
-title: GFXpro - Design & Entwicklung
-email: s.koschnicke@gfxpro.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://www.gfxpro.com" # the base hostname & protocol for your site
-twitter_username: SvenKoschnicke
-github_username:  SKoschnicke
+info:
+  # Blog Information
+  title:        "Will Koehler"
+  subtitle:     "Independent web developer living in Columbus, OH"
+  cover_image:  short-north-columbus-oh.jpg
+  cover_image_caption: "Short North, Columbus, OH. Photo: Pineapple XVI"
+  about_image:  goodale-park-columbus-oh.jpg
+  about_image_caption: "Goodale Park, Columbus, OH. Photo: Dave K."
+  logo:         logo.png
+  author:
+    name: Sven Koschnicke
+    twitter: svenkoschnicke
+    bio: Web developer specializing in full-stack Rails applications.
+    image: sven.jpg
 
-# Build settings
-markdown: kramdown
-excerpt_separator: "<!--more-->"
+
+  # Social links
+  # facebook:     sendtoinc
+  twitter:      SvenKoschnicke
+  github:       SKoschnicke
+  # gplus:        '101183822199340201470'
+
+  # Comments
+  disqus:
+    # Eg. "exampleblog" Set to false to disable comments
+    shortname: false
+
+  # Google Analytics tracking ID. Leave blank to disable tracking
+  google-analytics-id:
+
+  # Sharing settings
+  sharing:
+    twitter:    true
+    facebook:   true
+    gplus:      false
+    hn:         false
+    reddit:     true
+
+# Root URL where the site will be published
+url:         http://www.gfxpro.com
+
+# host 0.0.0.0 allows us to access site via sapphire.local or localhost or 127.0.0.1
+host: 0.0.0.0
+
+paginate:             10
+excerpt_separator: "<!-- more -->"

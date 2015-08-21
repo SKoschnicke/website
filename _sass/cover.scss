@@ -77,10 +77,20 @@
         margin:1.5em 1em 0em 0;
         line-height: 0px;
         text-align:center;
+        fill:#fff;
         
         &:hover {
           background:#fff;
-          @include black_icons;
+          fill:#000;
+        }
+
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+
+        .icon {
+          fill: inherit;
         }
       }
     }

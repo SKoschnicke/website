@@ -1,6 +1,26 @@
 ---
-layout: default
+layout: base
 ---
-<h1 class="start">{{ page.title }}</h1>
+{% if page.cover_image %}
+<div class="article-cover" style="background-image:url(/images/{{ page.cover_image }})"></div>
+{% endif %}
+{% if page.cover_image_caption %}
+<div class='cover-caption'><a href='/about.html#pictures'>{{ page.cover_image_caption }}</a></div>
+{% endif %}
 
-{{ content }}
+<article {% if page.container_class %}class='{{ page.container_class }}'{% endif %}>
+
+  <div class="container">
+    <header>
+      <h1 class="title">{{ page.title }}</h1>
+      {% if page.subtitle %}<h2 class="subtitle">{{ page.subtitle }}</h2>{% endif %}
+    </header>
+
+    <section>
+      {{ content }}
+    </section>
+
+    <footer>
+    </footer>
+  </div>
+</article>

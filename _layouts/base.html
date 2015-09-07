@@ -12,8 +12,8 @@
   <link rel="alternate" type="application/atom+xml" title="{{ site.info.title }}" href="/atom.xml" />
   <meta name="title" content="{% if page.title %}{{ page.title }} {% else %}{{ site.info.title }}{% endif %}">
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
-  {% if page.site.gplus %}<link rel="publisher" href="https://plus.google.com/{{ site.info.gplus }}">{% endif %} 
-  {% if page.author.gplus %}<link rel="author" href="https://plus.google.com/{{ page.author.gplus }}">{% endif %}       
+  {% if page.site.gplus %}<link rel="publisher" href="https://plus.google.com/{{ site.info.gplus }}">{% endif %}
+  {% if page.author.gplus %}<link rel="author" href="https://plus.google.com/{{ page.author.gplus }}">{% endif %}
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.info.title }}{% endif %}"/>
   <meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
   {% if page.cover_image %}<meta property="og:image" content="{{ site.url }}/images/{{ page.cover_image }}"/>{% endif %}
@@ -21,19 +21,22 @@
   <meta property="og:description" content="{{ page.excerpt }}"/>
   <meta name="description" content="{{ page.excerpt }}"/>
   {% endif %}
-  <meta property="og:site_name" content="{{ site.info.title }}">     
+  <meta property="og:site_name" content="{{ site.info.title }}">
 </head>
 <body>
-    
+
   <header class="site-header">
     <nav>
       <a class="brand" href="/">
-        <img src="/images/{{ site.info.logo }}" alt="GFXpro Logo">
+        Sven Koschnicke
       </a>
       {% assign pages_in_order = site.pages | sort: "order" %}
+      <ul>
       {% for p in pages_in_order %}
         {% if p.title %}
+      <li>
         <a class="page-link{% if p.url == page.url %} active{% endif %}" href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a>
+        </li>
         {% endif %}
       {% endfor %}
     </nav>
@@ -44,12 +47,12 @@
   <footer class="site-footer">
     <div class="container">
       Made with precision in Kiel, Germany
-        
+
       <nav>
         <a href="/">Blog</a> &middot;
         <a href="/about.html">About</a>
       </nav>
-        
+
       <nav class="social">
         {% include social_links.html %}
       </nav>

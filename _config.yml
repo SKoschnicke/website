@@ -2,10 +2,10 @@ info:
   # Blog Information
   title:        "Sven Koschnicke"
   subtitle:     "I make great software."
-  cover_image:  short-north-columbus-ohu.jpg
-  cover_image_caption: "Short North, Columbus, OH. Photo: Pineapple XVI"
-  about_image:  goodale-park-columbus-oh.jpg
-  about_image_caption: "Goodale Park, Columbus, OH. Photo: Dave K."
+  cover_image:  elevator.jpg
+  cover_image_caption: "Image from wallhaven.cc"
+  about_image:  moos.jpg
+  about_image_caption: "Image from wallhaven.cc"
   logo:         gfxpro-logo-black.png
   author:
     name: Sven Koschnicke

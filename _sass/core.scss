@@ -1,5 +1,5 @@
 @import "globals.scss";
-@import url(http://fonts.googleapis.com/css?family=Josefin+Sans|Poiret+One|Amatic+SC|Raleway:300,400,500);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans|Poiret+One:400|Raleway:300,400,500);
 
 // Use border-box sizing for everything.
 *,
@@ -49,7 +49,7 @@ h2, h3, h4, h5 {
   font-family: $fontsubheadings;
 }
 
-h1 { font-size: 4em; margin: 0.5em 0 1em; }
+h1 { font-size: 2.5em; margin: 0.5em 0 1em; }
 h2 { font-size: 1.5em; margin: 0.5em 0 1em; }
 h3 { font-size: 1.3em; margin: 0.5em 0 1.1em; }
 h4 { font-size: 1.2em; margin: 0.5em 0 1.2em; }
@@ -57,7 +57,7 @@ h4 { font-size: 1.2em; margin: 0.5em 0 1.2em; }
 a {
   color:$accent;
   text-decoration:none;
-    
+
   &:hover {
     color:darken($accent, 8%);
     text-decoration:none;
@@ -73,4 +73,3 @@ iframe { border: none; }
 .smaller {
   font-size: 70%;
 }
-

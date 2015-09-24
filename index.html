@@ -4,9 +4,19 @@ layout: base
 <article>
 <div class="start container">
 <h1>
-  My name is <em>Sven Koschnicke</em> and I create great software.
+   Hello! I am <em>Sven Koschnicke</em> and I create great software.
 </h1>
 <h2>Articles</h2>
+
+{% for post in site.posts %}
+  <section class="post_summary">
+    <h3 class="title"><a href="{{ post.url }}" rel="prefetch">{{ post.title }}</a></h3>
+    <p>
+      {{ post.catchphrase }} &mdash;
+      <time pubdate datetime="{{ post.date | date: "%Y-%d-%B" }}" title="{{ post.date | date: "%b %d, %Y" }}">{{ post.date | date: "%b %d, %Y" }}</time>
+    </p>
+  </section>
+{% endfor %}
 
 <h2>Projects</h2>
 </div>

@@ -9,4 +9,24 @@ div.start {
             font-style: normal;
         }
     }
+
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin: 4rem auto 1rem;
+        border-bottom: 0.1rem solid #F4F4F4;
+        width: 50%;
+    }
+
+    .post_summary h3.title {
+        text-align: center;
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    p {
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
 }

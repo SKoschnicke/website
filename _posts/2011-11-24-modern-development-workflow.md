@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Modern development workflow"
+catchphrase: Lightweight, remote, asynchronous.
 date: 2011/11/24
 slug: modern-development-workflow
 cover_image: meadow.jpg

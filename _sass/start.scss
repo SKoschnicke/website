@@ -29,4 +29,14 @@ div.start {
         font-size: 0.9rem;
     }
 
+    ol {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        list-style: none;
+        li {
+            width: 10rem;
+            padding: 1rem;
+        }
+    }
 }

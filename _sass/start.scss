@@ -14,7 +14,7 @@ div.start {
         text-align: center;
         font-size: 2rem;
         margin: 4rem auto 1rem;
-        border-bottom: 0.1rem solid #F4F4F4;
+        border-bottom: 0.1rem solid #DFDFDF;
         width: 50%;
     }
 
@@ -34,8 +34,9 @@ div.start {
         flex-flow: row wrap;
         justify-content: space-around;
         list-style: none;
+        font-size: 1rem;
         li {
-            width: 10rem;
+            width: 16rem;
             padding: 1rem;
         }
     }

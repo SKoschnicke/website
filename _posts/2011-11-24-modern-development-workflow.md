@@ -4,7 +4,8 @@ title: "Modern development workflow"
 catchphrase: Lightweight, remote, asynchronous.
 date: 2011/11/24
 slug: modern-development-workflow
-cover_image: meadow.jpg
+cover_image: cover_image_modern_dev_workflow.jpg
+cover_image_caption: "Kiel Exposure by Frank Lindecke, released under CC BY-ND 2.0"
 ---
 
 Developing high-quality software in little time is hard when you are a single developer, but it gets even harder when you are a group of developers working on the same project. Technology can enable us to work better together without forcing everyone into tight regulations on how, when and where they do their work.

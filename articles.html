@@ -3,9 +3,10 @@ layout: base
 title: Articles
 permalink: /articles/
 order: 21
-cover_image: elevator.jpg
+cover_image: cover_image_articles.jpg
+cover_image_caption: "The Power of Geometry by Jimmy Baikovicius, released under CC BY-SA 2.0 "
 ---
-<div class="blog-cover" style="background-image:url(/images/{{ site.info.cover_image }});">
+<div class="blog-cover" style="background-image:url(/images/{{ page.cover_image }});">
   <div class='cover_overlay'>
     <div class="content">
       <h1>{{ site.info.title }}</h1>
@@ -14,7 +15,7 @@ cover_image: elevator.jpg
     </div>
   </div>
 </div>
-<div class='cover-caption'><a href='/about.html#pictures'>{{ site.info.cover_image_caption }}</a></div>
+<div class='cover-caption'><a href='/about.html#pictures'>{{ page.cover_image_caption }}</a></div>
 
 <article>
   <div class="container">

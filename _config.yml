@@ -1,7 +1,7 @@
 info:
   # Blog Information
   title:        "Sven Koschnicke"
-  subtitle:     "I make great software."
+  subtitle:     "I create great software and help teams and companies to do the same."
   cover_image:  elevator.jpg
   cover_image_caption: "Image from wallhaven.cc"
   about_image:  moos.jpg
@@ -10,7 +10,7 @@ info:
   author:
     name: Sven Koschnicke
     twitter: svenkoschnicke
-    bio: Web developer specializing in full-stack Rails applications.
+    bio: "Software developer."
     image: sven.jpg
 
 

@@ -44,3 +44,12 @@ host: 0.0.0.0
 
 paginate:             10
 excerpt_separator: "<!-- more -->"
+
+gems: ['jekyll-paginate', jekyll/responsive_image]
+
+responsive_image:
+  template: _includes/responsive-image.html
+  sizes:
+    - width: 480
+    - width: 800
+    - width: 1200

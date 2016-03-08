@@ -1,0 +1,11 @@
+{% comment %}
+This template is used together with the responsive-image jekyll plugin. See
+https://github.com/wildlyinaccurate/jekyll-responsive-image
+for details.
+{% endcomment %}
+<picture class="{{ class }}">
+    {% for i in resized %}
+        <source media="(min-width: {{ i.width }}px)" srcset="/{{ i.path }}">
+    {% endfor %}
+    <img src="/{{ path }}">
+</picture>

@@ -33,7 +33,13 @@ layout: base
         {% elsif site.info.author.image %}
           <img src="/images/{{ site.info.author.image }}">
         {% endif %}
-        <p>Written by <strong><a rel="author" href="https://twitter.com/{% if page.author.twitter %}{{ page.author.twitter }}{% else %}{{ site.info.author.twitter }}{% endif %}" title="{% if page.author.name %}{{ page.author.name }}{% else %}{{ site.info.author.name }}{% endif %}" target="_blank">{% if page.author.name %}{{ page.author.name }}{% else %}{{ site.info.author.name }}{% endif %}</strong><br>
+          <p>Written by
+            <strong>
+              <a rel="author" href="https://twitter.com/{% if page.author.twitter %}{{ page.author.twitter }}{% else %}{{ site.info.author.twitter }}{% endif %}" title="{% if page.author.name %}{{ page.author.name }}{% else %}{{ site.info.author.name }}{% endif %}" target="_blank">
+              {% if page.author.name %}{{ page.author.name }}{% else %}{{ site.info.author.name }}{% endif %}
+              </a>
+            </strong>
+          <br>
           <span class="muted">{% if page.author.bio %}{{ page.author.bio }}{% else %}{{ site.info.author.bio }}{% endif %}</span>
         </p>
       </address>
@@ -44,7 +50,7 @@ layout: base
         <p>{{ post.excerpt }}</p>
         <hr>
       </section>
-      {% endif %} 
+      {% endif %}
       {% if page.previous.url %}
       {% assign post = page.previous %}
       <section class="post_summary">
@@ -52,7 +58,7 @@ layout: base
         <p>{{ post.excerpt }}</p>
         <hr>
       </section>
-      {% endif %} 
+      {% endif %}
       {% if site.info.disqus.shortname %}
       <section>
         {% include disqus.html %}

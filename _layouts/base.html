@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="{{ "/css/base.css" | prepend: site.baseurl }}">
   {% include scripts.html %}
   <link rel="shortcut icon" href="/favicon.ico?v2" type="image/x-icon" />
-  <link rel="alternate" type="application/atom+xml" title="{{ site.info.title }}" href="/atom.xml" />
+  <link rel="alternate" type="application/atom+xml" title="{{ site.info.title }}" href="/feed.xml" />
   <meta name="title" content="{% if page.title %}{{ page.title }} {% else %}{{ site.info.title }}{% endif %}">
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
   {% if page.site.gplus %}<link rel="publisher" href="https://plus.google.com/{{ site.info.gplus }}">{% endif %}
@@ -46,7 +46,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      Made with precision in Kiel, Germany
+      Made with precision in the real north of Germany.
 
       <nav>
         <a href="/articles">Articles</a> &middot;
@@ -56,7 +56,7 @@
       <nav class="social">
         {% include social_links.html %}
       </nav>
-      <div>Based on Incorporated theme by <a href="https://sendtoinc.com">Inc</a></div>
+      <div>Based on Incorporated theme by <a href="https://sendtoinc.com">Inc</a>.</div>
     </div>
   </footer>
 

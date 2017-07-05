@@ -1,3 +1,7 @@
+# Note that, for this to work, the master branch needs to be renamed to
+# "source" and the build website will be put into the master branch. This is
+# suitable for publishing to GitHub.
+
 # Temporarily store uncommited changes
 git stash
 

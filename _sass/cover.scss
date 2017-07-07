@@ -1,8 +1,8 @@
 @import "globals.scss";
 
 /*
-html { 
-  background: url(/images/gxpbackground5.jpg) no-repeat center center fixed; 
+html {
+  background: url(/images/gxpbackground5.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -21,6 +21,12 @@ html {
   background-color: #111;
   background-size: cover;
   background-position: center center;
+}
+
+.blog-cover img, .article-cover img {
+    position: absolute;
+    top:-100%; left:0; right: 0; bottom:-100%;
+    margin: auto;
 }
 
 .cover-caption {
@@ -49,9 +55,9 @@ html {
     background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
     background-image: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
     z-index:10;
-        
+
     @include vertical_aligning_container;
-        
+
     .content {
       display: inline-block;
       vertical-align: middle;
@@ -61,11 +67,11 @@ html {
 //        font-size: 45px;
         line-height:1.4em;
       }
-    
+
       h3 {
         font-size: 22px;
       }
-    
+
       h1, h3 {
         color:#fff;
         margin:0;
@@ -88,7 +94,7 @@ html {
         line-height: 0px;
         text-align:center;
         fill:#fff;
-        
+
         &:hover {
           background:#fff;
           fill:#000;

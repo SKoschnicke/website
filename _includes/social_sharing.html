@@ -6,18 +6,6 @@
   </div>
   {% endif %}
 
-  {% if site.info.sharing.facebook %}
-  <div class='facebook'>
-    <div class="fb-share-button" data-layout="button_count"></div>
-  </div>
-  {% endif %}
-
-  {% if site.info.sharing.gplus %}
-  <div class='google'>
-    <div class="g-plusone" data-size="medium"></div>
-  </div>
-  {% endif %}
-    
   {% if site.info.sharing.hn %}
   <div class='hn'>
     <a href="https://news.ycombinator.com/submit" class="hn-button" data-title="{{ page.title }}" data-url="{{ site.url }}{{ page.url }}" data-count="horizontal">Vote on Hacker News</a>
@@ -26,7 +14,7 @@
 
   {% if site.info.sharing.reddit %}
   <div class='reddit'>
-    <a href="//www.reddit.com/submit" onclick="window.open('//www.reddit.com/submit?url={{ site.url }}{{ page.url }}&title={{ page.title | cgi_escape }}'); return false"> <img src="//www.redditstatic.com/spreddit7.gif" alt="submit to reddit" border="0" /> </a>
+    <a href="//www.reddit.com/submit" onclick="window.open('//www.reddit.com/submit?url={{ site.url }}{{ page.url }}&title={{ page.title | cgi_escape }}'); return false">Submit to reddit</a>
   </div>
   {% endif %}
 </div>

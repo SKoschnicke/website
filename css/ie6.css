@@ -1,9 +1,0 @@
-html,body{width:100%;background-image:none;}
-img#background{display:none;}
-div#main{width:963px;}div#main div#sidebar{background-color:#2B1C13;height:500px;}div#main div#sidebar img#logo{behavior:url(css/iepngfix.htc);}
-div#main div#sidebar ul#navigation{margin-left:52px;}div#main div#sidebar ul#navigation li a{background-color:#A0A0A0;}
-div#main div#sidebar ul#navigation li a:hover{background-color:#B8B8B8;}
-div#main div#content ul#competence li{padding:5px;}
-div#main div#sidebar,div#main div#sidebar ul#navigation,div#main div#content p img#photo{display:inline;}
-div#main div#content h1{position:relative;zoom:1;}
-div#main,div#main div#content ul#startpage{zoom:1;}

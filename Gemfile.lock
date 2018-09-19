@@ -1,8 +1,7 @@
 GEM
-  remote: https://api.rubygems.org/
   specs:
     colorator (0.1)
-    ffi (1.9.10)
+    ffi (1.9.18)
     jekyll (3.1.2)
       colorator (~> 0.1)
       jekyll-sass-converter (~> 1.0)
@@ -22,15 +21,17 @@ GEM
       listen (~> 3.0)
     kramdown (1.10.0)
     liquid (3.0.6)
-    listen (3.0.6)
-      rb-fsevent (>= 0.9.3)
-      rb-inotify (>= 0.9.7)
+    listen (3.1.5)
+      rb-fsevent (~> 0.9, >= 0.9.4)
+      rb-inotify (~> 0.9, >= 0.9.7)
+      ruby_dep (~> 1.2)
     mercenary (0.3.5)
-    rb-fsevent (0.9.7)
-    rb-inotify (0.9.7)
-      ffi (>= 0.5.0)
+    rb-fsevent (0.10.2)
+    rb-inotify (0.9.10)
+      ffi (>= 0.5.0, < 2)
     rmagick (2.15.4)
     rouge (1.10.1)
+    ruby_dep (1.5.0)
     safe_yaml (1.0.4)
     sass (3.4.21)
 
@@ -40,3 +41,6 @@ PLATFORMS
 DEPENDENCIES
   jekyll-paginate
   jekyll-responsive_image
+
+BUNDLED WITH
+   1.15.3

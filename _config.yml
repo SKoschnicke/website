@@ -46,7 +46,9 @@ host: 0.0.0.0
 paginate:             10
 excerpt_separator: "<!-- more -->"
 
-gems: ['jekyll-paginate', jekyll/responsive_image]
+plugins:
+  - jekyll-paginate
+  - jekyll-responsive-image
 
 responsive_image:
   # base path where images are stored, always prefixed to given image path (default: assets)

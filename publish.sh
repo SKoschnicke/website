@@ -1,2 +1,2 @@
 # Build new files
-docker run --rm -it --volume=$(pwd):/srv/jekyll jekyll build
+docker run --rm -it --volume=$(pwd):/srv/jekyll jekyll jekyll build
